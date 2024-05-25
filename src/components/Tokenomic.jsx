@@ -8,11 +8,7 @@ import { slideIn, textVariant } from "../utils/motion";
 
 const Tokenomic = () => {
   const canvasRef = useRef(null);
-  const [isSize, setIsSize] = useState(500);
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
-  });
+  const [isMobile, setIsMobile] = useState(false);
   let chart;
 
   useEffect(() => {
@@ -67,27 +63,20 @@ const Tokenomic = () => {
     };
   }, []);
 
+
   useEffect(() => {
-    const handleResize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight
-      });
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    setIsMobile(mediaQuery.matches);
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
     };
 
-    window.addEventListener('resize', handleResize);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
-  }, [])
-
-  useEffect(() => {
-    switch (windowSize.width) {
-      case 900: setIsSize(200); break;
-      case 400: setIsSize(100); break;
-    }
-  }, [])
+  }, []);
 
   return (
     <>
@@ -95,13 +84,18 @@ const Tokenomic = () => {
         <p className={styles.sectionSubText}>My plan</p>
         <h2 className={styles.sectionHeadText}>Roadmap.</h2>
       </motion.div>
-      <motion.canvas variants={slideIn("left", "tween", 0.1, 0.5)} ref={canvasRef} width={isSize} height={isSize} style={{ display: "block", margin: "auto", marginTop: '40px', textAlign: "center" }}></motion.canvas>
+
+      <motion.div
+        style = {{width: `${isMobile ? 200 : 500}`, height: `${isMobile ? 200 : 500}`}}
+        variants={slideIn("left", "tween", 0.1, 0.5)} 
+      >
+        <canvas 
+          ref={canvasRef} 
+          style={{ display: "block", margin: "auto", marginTop: '40px', textAlign: "center", width:'70%', height: '70%'}}
+        />
+      </motion.div>
     </>
   );
 };
 
 export default SectionWrapper(Tokenomic, "tokenomic");
-
-
-
-
