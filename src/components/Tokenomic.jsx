@@ -43,7 +43,7 @@ const Tokenomic = () => {
               position: 'top',
               labels: {
                 font: {
-                  size: 14,
+                  size: `${isMobile ? 12 : 14}`,
                 },
                 color: 'white',
               }
