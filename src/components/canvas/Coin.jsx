@@ -13,8 +13,8 @@ const Coins = ({ isMobile }) => {
       <pointLight position={[-10, 10, 0]} intensity={1000} />
       <primitive
         object={Coin.scene}
-        scale={isMobile ? 1.9 : 2}
-        position={isMobile ? [0, 2, 0] : [0, -1, 0]}
+        scale={isMobile ? 1.5 : 2}
+        position={isMobile ? [0, -0.5, 0] : [0, -1, 0]}
         rotation={[0, 1.26, 0]}
       />
     </mesh>
@@ -25,20 +25,19 @@ const CoinCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 500px)');
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
-
     const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches)
-    }
+      setIsMobile(event.matches);
+    };
 
-    mediaQuery.addEventListener('chage', handleMediaQueryChange);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
 
     return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange)
-    }
-  }, [])
-
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+  
   return (
     <Canvas
       frameloop='demand'
