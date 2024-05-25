@@ -6,9 +6,10 @@ import { SectionWrapper } from "../hoc";
 import { slideIn, textVariant } from "../utils/motion";
 import { users } from "../constants/index";
 
-const TableData = ({ name, balance }) => {
+const TableData = ({ index, name, balance }) => {
   return (
     <>
+      <td className="p-4 border bg-[#1d1836]">{index + 1}</td>
       <td className="p-4 border bg-[#1d1836]">{name}</td>
       <td className="p-4 border bg-[#1d1836]">{balance}</td>
     </>
@@ -30,6 +31,7 @@ const Tops = () => {
         <table className="border-collapse mt-[40px] w-full rounded-lg overflow-hidden border">
           <thead className="bg-green-600 text-white font-bold ">
             <tr>
+              <th className="p-4 border">Top</th>
               <th className="p-4 border">Name</th>
               <th className="p-4 border">Balance</th>
             </tr>
@@ -37,7 +39,7 @@ const Tops = () => {
           <tbody>
             {users.map((user, index) => (
               <tr key={index}>
-                <TableData {...user} />
+                <TableData index={index} {...user} />
               </tr>
             ))}
           </tbody>
