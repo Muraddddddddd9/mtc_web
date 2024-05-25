@@ -82,7 +82,7 @@ const Tokenomic = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My plan</p>
-        <h2 className={styles.sectionHeadText}>Roadmap.</h2>
+        <h2 className={styles.sectionHeadText}>Tokenomic.</h2>
       </motion.div>
 
       <motion.div
