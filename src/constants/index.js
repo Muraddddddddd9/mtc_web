@@ -18,6 +18,10 @@ export const navLinks = [
   {
     id: "tokenomic",
     title: "Tokenomic",
+  },
+  {
+    id: "tops",
+    title: "Tops",
   }
 ];
 
@@ -47,3 +51,18 @@ export const roadmaps = [
     date: "Soon...",
   }
 ];
+
+export const users = [
+  {
+    name: 'Murad',
+    balance: 20000,
+  },
+  {
+    name: 'Ян',
+    balance: 2000,
+  },
+  {
+    name: 'Даня',
+    balance: 50000,
+  },
+]
