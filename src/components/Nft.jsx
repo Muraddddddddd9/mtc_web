@@ -30,17 +30,18 @@ const Nft = () => {
                         className="w-full h-auto relative z-10 object-cover"
                     />
                 </div>
+            </motion.p>
+
+            <div className="flex justify-center mt-4">
                 <a
                     href="https://getgems.io/collection/EQA6loVnIw_pBPuABtTsaU6PgwfiYbCgkgZhT12_QAcOISAF"
-                    className="top-1/2 right-4 transform -translate-y-1/2 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition-colors z-20"
+                    className="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition-colors z-20"
                 >
                     GO BUY
                 </a>
-            </motion.p>
+            </div>
         </>
     )
 }
 
 export default SectionWrapper(Nft, "nft")
-
-

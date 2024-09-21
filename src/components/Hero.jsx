@@ -10,7 +10,6 @@ const Hero = () => {
         ${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl
         mx-auto flex flex-col items-start gap-5
       `}>
-        {/* Текстовая часть */}
         <div>
           <h1 className={`${styles.heroHeadText}`}>
             $METRO
@@ -21,8 +20,7 @@ const Hero = () => {
           </p>
         </div>
 
-        {/* Изображение */}
-        <div className="flex justify-center items-center w-full mb-10"> {/* Уменьшили отступ снизу */}
+        <div className="flex justify-center items-center w-full mb-10">
           <img
             src={LogoMetro}
             alt="Logo"
