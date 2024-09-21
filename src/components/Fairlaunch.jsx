@@ -14,8 +14,8 @@ const Fairlaunch = () => {
     const interval = useRef();
 
     const startTimer = () => {
-        // const countdownDate = new Date('October 1 2024 15:00:00').getTime();
-        const countdownDate = new Date('September 21 2024 11:29:00').getTime();
+        const countdownDate = new Date('October 1 2024 15:00:00').getTime();
+        // const countdownDate = new Date('September 21 2024 11:29:00').getTime();
 
         interval.current = setInterval(() => {
             const now = new Date().getTime();
