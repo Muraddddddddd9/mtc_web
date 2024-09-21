@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { Hero, Navbar, Overview, Roadmap, Tokenomic, Tops } from './components';
+import { Hero, Navbar, Overview, Roadmap, Tokenomic, Nft, Fairlaunch } from './components';
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
         <Overview />
         <Roadmap />
         <Tokenomic />
-        <Tops />
+        <Nft />
+        <Fairlaunch />
       </div>
     </BrowserRouter>
   )

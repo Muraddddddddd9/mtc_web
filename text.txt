@@ -1,0 +1,19 @@
+npm create vite@latest ./ -- --template react
+
+
+npm install --legacy-peer-deps -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+npm install --legacy-peer-deps @react-three/fiber @react-three/drei 
+            maath react-tilt react-vertical-timeline-component 
+            @emailjs/browser framer-motion react-router-dom
+
+
+add 
+    public(explorer) with 3D-modals
+    assets(explorer) with img
+    component(explorer) with canvas(explorer) import 3D-modal 
+                        with all component
+
+npm i --legacy-peer-deps three

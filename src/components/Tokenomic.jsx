@@ -16,8 +16,8 @@ const Tokenomic = () => {
 
     const updateChart = () => {
       const data = [
-        { bank: 'FAIRLAUNCH 45%', proc: 45 },
-        { bank: 'DEX LISTING 33%', proc: 33 },
+        { bank: 'FAIRLAUNCH 41%', proc: 41 },
+        { bank: 'DEX LISTING 37%', proc: 37 },
         { bank: 'AIRDROP 12%', proc: 12 },
         { bank: 'MARKETING 10%', proc: 10 },
       ];

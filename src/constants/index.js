@@ -4,6 +4,7 @@ import {
   fairlaunch,
   listing,
   airdrop,
+  nft,
 } from "../assets";
 
 export const navLinks = [
@@ -20,9 +21,13 @@ export const navLinks = [
     title: "Tokenomic",
   },
   {
-    id: "tops",
-    title: "Tops",
-  }
+    id: "nft",
+    title: "NFT",
+  },
+  {
+    id: "fairlaunch",
+    title: "Fairlaunch",
+  },
 ];
 
 export const roadmaps = [
@@ -39,30 +44,21 @@ export const roadmaps = [
     date: "9 May 2024",
   },
   {
+    title: "NFT drop",
+    icon: nft,
+    iconBg: "#383E56",
+    date: "11 September 2024",
+  },
+  {
     title: "Listing",
     icon: listing,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "Soon...",
   },
   {
     title: "Airdrop distribution",
     icon: airdrop,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "Soon...",
   }
 ];
-
-export const users = [
-  {
-    name: 'Murad',
-    balance: 20000,
-  },
-  {
-    name: 'Ян',
-    balance: 2000,
-  },
-  {
-    name: 'Даня',
-    balance: 50000,
-  },
-]
