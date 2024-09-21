@@ -17,7 +17,7 @@ const Nft = () => {
 
             <motion.p
                 variants={fadeIn("", "", 0.1, 1)}
-                className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] mx-auto"
+                className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] mx-auto mb-5"
                 style={{ wordBreak: 'break-all' }}
             >
                 <div className="relative w-full max-w-3xl mx-auto overflow-hidden">
