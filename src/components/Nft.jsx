@@ -26,6 +26,7 @@ const Nft = () => {
                         autoPlay
                         loop
                         muted
+                        playsInline
                         className="w-full h-auto relative z-10 object-cover"
                     />
                 </div>

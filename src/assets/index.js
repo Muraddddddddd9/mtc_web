@@ -7,6 +7,7 @@ import listing from "./listing.png";
 import airdrop from "./airdrop.png";
 import nft from "./nft.png"
 import soonNFT from "./Nft.mp4"
+import LogoMetro from "./LogoMetro.png"
 
 export {
   logo,
@@ -17,5 +18,6 @@ export {
   listing,
   airdrop,
   nft,
-  soonNFT
+  soonNFT,
+  LogoMetro
 };
