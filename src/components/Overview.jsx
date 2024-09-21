@@ -21,7 +21,7 @@ const Overview = () => {
         $METRO is a community token on the TON blockchain for
         those who respect public transportation. 
         $METRO dreams of becoming just as public. <br /> <br />
-        Wallet: EQDXEU4JO3C4KCvZnWbbpoxJiOZOHyCasAxPTq_3_sWAnYYD
+        CA: EQD1NLnnGPZheEXWH8OejeaCE1YUCRGfn4kpVLcYAGxljM5N
       </motion.p>
     </>
   )

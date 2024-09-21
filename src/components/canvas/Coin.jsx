@@ -43,6 +43,7 @@ const CoinCanvas = () => {
       frameloop='demand'
       shadows
       camera={{ position: [20, 23, 5], fov: 25}}
+      style={{zIndex: -1}}
       gl={{ preserveDrawingBuffer: true}}
     >
         <OrbitControls 

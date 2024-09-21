@@ -80,7 +80,7 @@ const Fairlaunch = () => {
                 )}
                 <a
                     href="https://tonraffles.app/jetton/fairlaunch/METRO"
-                    className="text-[24px] font-bold"
+                    className="top-1/2 right-4 transform -translate-y-1/2 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition-colors z-20"
                 >
                     LETS GO
                 </a>

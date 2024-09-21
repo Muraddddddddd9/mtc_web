@@ -6,7 +6,7 @@ import fairlaunch from "./fairlaunch.png";
 import listing from "./listing.png";
 import airdrop from "./airdrop.png";
 import nft from "./nft.png"
-import soonNFT from "./soonNFT.mp4"
+import soonNFT from "./Nft.mp4"
 
 export {
   logo,

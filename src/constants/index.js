@@ -41,7 +41,7 @@ export const roadmaps = [
     title: "Fairlaunch",
     icon: fairlaunch,
     iconBg: "#E6DEDD",
-    date: "9 May 2024",
+    date: "8 September 2024",
   },
   {
     title: "NFT drop",
@@ -53,12 +53,12 @@ export const roadmaps = [
     title: "Listing",
     icon: listing,
     iconBg: "#E6DEDD",
-    date: "Soon...",
+    date: "1 October 2024",
   },
   {
     title: "Airdrop distribution",
     icon: airdrop,
     iconBg: "#383E56",
-    date: "Soon...",
+    date: "Early November",
   }
 ];
