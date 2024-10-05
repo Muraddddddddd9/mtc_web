@@ -6,7 +6,7 @@ import Roadmap from './Roadmap'
 import Tokenomic from './Tokenomic'
 import Nft from './Nft'
 import Fairlaunch from './Fairlaunch'
-
+import DeDustAndGecko from './DeDustAndGecko'
 
 export {
   CoinCanvas,
@@ -17,4 +17,5 @@ export {
   Tokenomic,
   Nft,
   Fairlaunch,
+  DeDustAndGecko
 }

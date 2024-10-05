@@ -24,10 +24,14 @@ export const navLinks = [
     id: "nft",
     title: "NFT",
   },
+  // {
+  //   id: "fairlaunch",
+  //   title: "Fairlaunch",
+  // },
   {
-    id: "fairlaunch",
-    title: "Fairlaunch",
-  },
+    id: "dedust_gecko",
+    title: "DeDust and Gecko"
+  }
 ];
 
 export const roadmaps = [

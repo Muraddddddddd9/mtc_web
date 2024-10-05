@@ -8,6 +8,8 @@ import airdrop from "./airdrop.png";
 import nft from "./nft.png"
 import soonNFT from "./Nft.mp4"
 import LogoMetro from "./LogoMetro.png"
+import LogoDeDust from "./dedust-logo.png";
+import LogoGecko from "./gecko-logo.png"
 
 export {
   logo,
@@ -19,5 +21,7 @@ export {
   airdrop,
   nft,
   soonNFT,
-  LogoMetro
+  LogoMetro,
+  LogoDeDust,
+  LogoGecko
 };

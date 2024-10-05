@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { Hero, Navbar, Overview, Roadmap, Tokenomic, Nft, Fairlaunch } from './components';
+import { Hero, Navbar, Overview, Roadmap, Tokenomic, Nft, Fairlaunch, DeDustAndGecko } from './components';
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
         <Roadmap />
         <Tokenomic />
         <Nft />
-        <Fairlaunch />
+        {/* <Fairlaunch /> */}
+        <DeDustAndGecko />
       </div>
     </BrowserRouter>
   )
