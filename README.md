@@ -10,5 +10,5 @@ This project uses **React**, **Vite**, and **Tailwind CSS**.
    ```
 2. Start the development server:
    ```sh
-   npm run start
+   npm run dev
    ```
